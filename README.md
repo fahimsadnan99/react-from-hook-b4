@@ -5,16 +5,16 @@
 
 
 
-import React from 'react'
-import { useRef } from 'react'
-import { useForm } from "react-hook-form"
-import "./Signup.css"
+       import React from 'react'
+       import { useRef } from 'react'
+       import { useForm } from "react-hook-form"
+       import "./Signup.css"
 
 
 
 
 
-const Signup = () => {
+       const Signup = () => {
 
     const { register, formState: { errors }, handleSubmit, reset, watch } = useForm()
 
@@ -97,25 +97,25 @@ const Signup = () => {
             </div>
         </div >
     )
-}
+    }
 
-export default Signup
+       export default Signup
 
 
 
 
 # CSS section
 
-.input_field {
+    .input_field {
     border: none !important;
-}
-.input_field:focus {
+     }
+    .input_field:focus {
     box-shadow: none !important;
-} 
-.input_field_div {
+     } 
+    .input_field_div {
     border-bottom: 1px solid rgba(0, 0, 0, 0.137);
-}
-.signup_Wrapper {
+    }
+    .signup_Wrapper {
     border-radius: 10px;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.144);
-}
+    }
