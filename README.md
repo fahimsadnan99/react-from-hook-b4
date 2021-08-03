@@ -57,14 +57,14 @@
                             </div>
                             {errors.email && (<small style={{ color: "red" }}>{errors.email.message}</small>)}
 
-                            <div className="d-flex input_field_div">
-                                <span className="mt-3 mr-2"> +880 </span>   <input type="phone" className="form-control input_field my-2" {...register("phone", {
+                            <div className=" input_field_div">
+                                  <input type="phone" className="form-control input_field my-2" {...register("phone", {
                                     required: "Phone is Require", min: {
                                         value: 10,
                                         message: "Minimum value is 10"
                                     },
                                     pattern: {
-                                        value: /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/,
+                                        value: /^(?:\+88|88)?(01[3-9]\d{8})$/,
                                         message: "Phone Number is invalid"
                                     }
                                 })} placeholder="Enter Your phone"></input>
